@@ -1,0 +1,26 @@
+<%- include ('partials/header') %>
+
+<div class="detail_type" id="type">           
+    
+    <p class="name_type" id="name" style="background-color: #<%= type.color %>"><%= type.name %></p>
+    
+
+</div>
+    
+<main class="items">
+
+<% for (const pokemon of type.pokemons) { %>
+    
+<div class="pokemon">
+    <div class="pokimage">
+        <img src="/img/<%= pokemon.numero %>.png" alt="<%= pokemon.nom %>">
+    </div>
+    <div class="pokenom">
+        <a class="a_pokenom" href="/detail/<%= pokemon.id %>">#<%= pokemon.numero %> <%= pokemon.nom %></a>
+    </div>
+</div>
+<% } %>
+
+</main>
+
+<%- include ('partials/footer') %>

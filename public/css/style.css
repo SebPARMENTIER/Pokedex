@@ -1,0 +1,178 @@
+body {
+  font-family: 'Bree Serif', serif;
+  background-color: #C14040;
+  margin: 0.5em 1em;
+}
+
+.header_nav {
+  color: #C14040;
+  margin: 0 0 1em 0;
+  background-color: #EFE3E3;
+  border-radius: 20px;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.home {
+  margin: 0 1em 0 1em;
+  font-size: 1.8em;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: #C14040;
+}
+
+.item_nav {
+  margin: 0 1em 0 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 1em;
+  width: 85px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+}
+
+.pokemon {
+  background-color: #982C2C;
+  color: #F9D3D3;
+  border-radius: 25px;
+  width: 410px;
+  padding: 1.2em;
+  margin: 0.5em;
+}
+
+.pokimage {
+  display: flex;
+  justify-content: center;
+}
+
+.a_pokenom {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+  color: #F9D3D3;
+}
+
+.detail_title {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.detail_picture {
+  margin-right: 3em;
+}
+
+.detail_global {
+  margin: 2em 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.detail_info {
+  background-color: #982C2C;
+  width: 800px;
+  border-radius: 20px;
+  padding: 2em 1em;
+}
+
+.detail_pokemon {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.detail_type {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.type {
+  color: #FFFFFF;
+  padding: 0.8em 0.5em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  justify-content: space-between;
+}
+
+.stat_title {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+
+li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.6em;
+}
+
+.barre {
+  width: 50%;
+  height: 1.5em;
+  background-color: 	#632B2B;
+  border-radius: 5px;
+}
+
+.barre2 {
+  
+  height: 1.5em;
+  background-color: 	#FFFFFF;
+  border-radius: 5px 0 0 5px;
+}
+
+h4 {
+  width: 10em;
+  color: #FFFFFF;
+}
+
+h5 {
+  color: #FFFFFF;
+}
+
+.back_home {
+  color: #EFE3E3;
+  text-align: center;
+}
+
+.name_type {
+  color: #FFFFFF;
+  padding: 1.5em 0.5em;
+  border-radius: 5px;
+  margin: 0 0.25em;
+  width: 432.25px;
+  font-size: 1.5em;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.instruction {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  padding: 1.5em 0.5em;
+}
+
+#type {
+  justify-content: center;
+
+}
+
+#name {
+  width: 100vw;
+}

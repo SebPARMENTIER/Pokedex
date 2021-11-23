@@ -1,0 +1,98 @@
+<%- include ('partials/header') %>
+
+<main class="detail">
+    
+    <div class="detail_title">
+        <h1>Détails de <%= pokemon.nom %></h1>
+    </div>
+
+    <div class="detail_global">
+    
+        <div class="detail_picture">
+            <img src="/img/<%= pokemon.numero %>.png" alt="<%= pokemon.nom%>">
+        </div>
+
+        <div class="detail_info">
+
+            <div class="detail_pokemon">
+                <h2>#<%= pokemon.numero %> <%= pokemon.nom%></h2>
+            </div>
+        
+            <div class="detail_type">
+                <% for (let typeIndex = 0; typeIndex < pokemon.types.length; typeIndex++) { %>
+                    <a href="/liste/<%= pokemon.types[typeIndex].id %>">
+                        <p class="type" style="background-color: #<%= pokemon.types[typeIndex].color %>"><%= pokemon.types[typeIndex].name %></p>
+                    </a>
+                <% } %>
+            </div>
+
+            <div class="stat_title">
+                <h3>Statistiques</h3>
+            </div>
+
+            <div class="detail_stat">
+                <ul class="stat">
+
+                    <li>
+                        <h4>PV</h4>
+                        <h5><%= pokemon.pv %></h5>
+                        
+                        <div class="barre">
+                            
+                            <div class="barre2" style="width: <%= (pokemon.pv*100)/255 %>%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Attaque</h4>
+                        <h5><%= pokemon.attaque %></h5>
+                        
+                        <div class="barre">
+                            <div class="barre2" style="width: <%= (pokemon.attaque*100)/255 %>%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Défénse</h4>
+                        <h5><%= pokemon.defense %></h5>
+                        
+                        <div class="barre">
+                            <div class="barre2" style="width: <%= (pokemon.defense*100)/255 %>%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Attaque Spé.</h4>
+                        <h5><%= pokemon.attaque_spe %></h5>
+                        
+                        <div class="barre">
+                            <div class="barre2" style="width: <%= (pokemon.attaque_spe*100)/255 %>%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Défense Spé.</h4>
+                        <h5><%= pokemon.defense_spe %></h5>
+                        
+                        <div class="barre">
+                            <div class="barre2" style="width: <%= (pokemon.defense_spe*100)/255 %>%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h4>Vitesse</h4>
+                        <h5><%= pokemon.vitesse %></h5>
+                        
+                        <div class="barre">
+                            <div class="barre2" style="width: <%= (pokemon.vitesse*100)/255 %>%"></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>   
+    </div>
+
+    <div class="back_home">
+        <a href="/" class="back_home">Revenir à la liste</a>
+    </div>
+    
+</main>
+
+<%- include ('partials/footer') %>
