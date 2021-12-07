@@ -1,6 +1,6 @@
 # Pokedex
 
-![image](resultat/home.png)
+![image](pokedex.png)
 
 ## Table of contents
 
